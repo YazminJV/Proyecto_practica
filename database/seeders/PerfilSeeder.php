@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Perfil;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+
 
 class PerfilSeeder extends Seeder
 {
@@ -14,6 +14,6 @@ class PerfilSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        Perfil::factory(12)->create();
     }
 }

@@ -3,10 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Curso_estudiante extends Model
 {
+    use HasFactory;
     protected $table= 'curso_estudiantes';
     protected $fillable=[
         'id_estu',
