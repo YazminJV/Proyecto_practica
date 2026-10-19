@@ -11,7 +11,8 @@ class CategoriaFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'nombre_categoria'=>fake()->words(1,true),
+            'descripcion'=>fake()->sentence()
         ];
     }
 }

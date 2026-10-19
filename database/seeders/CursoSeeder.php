@@ -8,11 +8,9 @@ use App\Models\Curso;
 
 class CursoSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
+ 
     public function run(): void
     {
-        //
+        Curso::factory(10)->create();
     }
 }

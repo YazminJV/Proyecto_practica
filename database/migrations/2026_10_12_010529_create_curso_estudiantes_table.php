@@ -16,9 +16,9 @@ return new class extends Migration
             $table->foreignId('id_estu')->constrained('estudiantes');
             $table->foreignId('id_curso')->constrained('cursos');
             $table->timestamp('fecha_inscripcion')->nullable();
-            $table->unique('id_estu','id_curso');
             $table->integer('progreso')->unsigned()->default(0);
             $table->enum('inscripcion',['Activa', 'Pendiente', 'Cancelada', 'Inactiva'])->default('Inactiva');
+            $table->timestamps();
             
         });
     }

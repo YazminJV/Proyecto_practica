@@ -8,11 +8,9 @@ use App\Models\Categoria;
 
 class CategoriaSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
+
     public function run(): void
     {
-        //
+        categoria::factory(6)->create();
     }
 }

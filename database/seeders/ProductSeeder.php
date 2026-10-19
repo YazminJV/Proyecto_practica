@@ -9,16 +9,9 @@ use App\Models\Product;
 
 class ProductSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
+   
     public function run(): void
-    {/*
-        Product::create([
-           'name'=>'laptop',
-            'id_categoria'=>1,
-            'price'=>1200.50,
-            'stock'=>15
-        ]);*/
+    {
+        Product::factory(15)->create();
     }
 }

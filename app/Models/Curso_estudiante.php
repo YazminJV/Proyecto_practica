@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Enums\inscripcion;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Curso_estudiante extends Model
@@ -12,12 +13,14 @@ class Curso_estudiante extends Model
     protected $fillable=[
         'id_estu',
         'id_curso',
-        'inscripcion'
+        'inscripcion',
+        'fecha_inscripcion',
+        'progreso'      
     ];
     protected function casts():array{
         return[
             'fecha_inscripcion'=>'datetime',
-            'inscripcion'=>Estado::class
+            'inscripcion'=>inscripcion::class
         ];
     }
 }

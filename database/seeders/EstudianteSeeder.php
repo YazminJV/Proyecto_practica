@@ -9,11 +9,9 @@ use App\Models\Estudiante;
 
 class EstudianteSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
+  
     public function run(): void
     {
-        //
+        Estudiante::factory(30)->create();
     }
 }
